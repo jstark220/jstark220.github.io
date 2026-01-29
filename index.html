@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Stark | Finance & Entrepreneurship</title>
+    <title>Jacob Stark | Auditing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-cream: #F8F6F1;
-            --color-charcoal: #1A1A1A;
-            --color-slate: #2D3436;
-            --color-warm-gray: #636E72;
-            --color-accent: #C9A962;
-            --color-accent-dark: #A88B4A;
-            --color-light-border: rgba(201, 169, 98, 0.3);
+            --color-cream: #FFFFFF;
+            --color-charcoal: #0A2463;
+            --color-slate: #1E3A8A;
+            --color-warm-gray: #64748B;
+            --color-accent: #2563EB;
+            --color-accent-dark: #1E40AF;
+            --color-light-border: rgba(37, 99, 235, 0.2);
             --font-display: 'Cormorant Garamond', Georgia, serif;
             --font-body: 'Outfit', -apple-system, sans-serif;
         }
@@ -47,9 +47,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
-                radial-gradient(circle at 20% 80%, rgba(201, 169, 98, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(201, 169, 98, 0.05) 0%, transparent 50%);
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -220,7 +220,7 @@
         .btn-primary:hover {
             background: var(--color-accent);
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(201, 169, 98, 0.3);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
         }
 
         .btn-secondary {
@@ -234,26 +234,35 @@
             color: var(--color-accent);
         }
 
-        /* Decorative element */
+        /* Profile Image */
         .hero-decoration {
             position: absolute;
             right: 8%;
             top: 50%;
             transform: translateY(-50%);
-            width: 400px;
-            height: 400px;
-            opacity: 0.6;
+            width: 350px;
+            height: 350px;
             animation: float 8s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(-50%) rotate(0deg); }
-            50% { transform: translateY(-55%) rotate(5deg); }
+            0%, 100% { transform: translateY(-50%); }
+            50% { transform: translateY(-55%); }
         }
 
-        .hero-decoration svg {
+        .hero-decoration img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--color-accent);
+            box-shadow: 0 20px 60px rgba(10, 36, 99, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .hero-decoration img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 30px 80px rgba(37, 99, 235, 0.4);
         }
 
         /* Section styling */
@@ -297,14 +306,14 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 10% 90%, rgba(201, 169, 98, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 10%, rgba(201, 169, 98, 0.08) 0%, transparent 40%);
+            background:
+                radial-gradient(circle at 10% 90%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 10%, rgba(37, 99, 235, 0.08) 0%, transparent 40%);
             pointer-events: none;
         }
 
         .about .section-number {
-            color: rgba(201, 169, 98, 0.2);
+            color: rgba(37, 99, 235, 0.2);
         }
 
         .about-content {
@@ -332,7 +341,7 @@
 
         .stat {
             padding: 2rem;
-            border: 1px solid rgba(201, 169, 98, 0.2);
+            border: 1px solid rgba(37, 99, 235, 0.2);
             position: relative;
             transition: all 0.4s ease;
         }
@@ -346,7 +355,7 @@
             font-family: var(--font-display);
             font-size: 3rem;
             font-weight: 500;
-            color: var(--color-accent);
+            color: var(--color-cream);
             margin-bottom: 0.5rem;
         }
 
@@ -397,7 +406,7 @@
         .experience-content h4 {
             font-size: 0.9rem;
             font-weight: 500;
-            color: var(--color-accent);
+            color: var(--color-charcoal);
             letter-spacing: 0.1em;
             text-transform: uppercase;
             margin-bottom: 1rem;
@@ -415,7 +424,7 @@
         }
 
         .education .section-number {
-            color: rgba(201, 169, 98, 0.2);
+            color: rgba(37, 99, 235, 0.2);
         }
 
         .education-card {
@@ -434,7 +443,7 @@
 
         .education-main h4 {
             font-size: 1.1rem;
-            color: var(--color-accent);
+            color: var(--color-cream);
             margin-bottom: 2rem;
         }
 
@@ -446,8 +455,8 @@
 
         .education-tag {
             padding: 0.75rem 1.25rem;
-            background: rgba(201, 169, 98, 0.1);
-            border: 1px solid rgba(201, 169, 98, 0.3);
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.3);
             font-size: 0.85rem;
             letter-spacing: 0.05em;
         }
@@ -461,7 +470,7 @@
             font-size: 0.8rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--color-accent);
+            color: var(--color-cream);
             margin-bottom: 1.5rem;
         }
 
@@ -734,7 +743,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-eyebrow">Finance & Entrepreneurship</div>
+            <div class="hero-eyebrow">Auditing</div>
             <h1>Jacob <span class="accent">Stark</span></h1>
             <p class="hero-description">
                 Accounting student at Babson College and incoming Audit Intern at Deloitte 
@@ -752,12 +761,7 @@
             </div>
         </div>
         <div class="hero-decoration">
-            <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="200" cy="200" r="150" stroke="#C9A962" stroke-width="1" stroke-dasharray="8 8" opacity="0.3"/>
-                <circle cx="200" cy="200" r="100" stroke="#C9A962" stroke-width="1" opacity="0.2"/>
-                <circle cx="200" cy="200" r="50" fill="#C9A962" opacity="0.1"/>
-                <path d="M200 50 L350 200 L200 350 L50 200 Z" stroke="#C9A962" stroke-width="1" opacity="0.2"/>
-            </svg>
+            <img src="headshot.jpeg" alt="Jacob Stark Professional Headshot">
         </div>
     </section>
 
@@ -770,34 +774,25 @@
         <div class="about-content">
             <div class="about-text fade-in">
                 <p>
-                    I'm a highly motivated accounting student at Babson College with a passion for 
-                    entrepreneurship and financial strategy. During my gap year, I founded and solely 
-                    managed StarkSensei Trading LLC, generating over $70,000 in revenue with approximately 
-                    50% profit margins.
-                </p>
-                <p>
-                    Currently, I serve as Co-Founder and CFO at Swipe Athletics, an innovative athletic 
-                    apparel startup providing high-quality tennis shorts with an integrated towel feature, 
-                    helping players keep their hands dry during intense matches.
-                </p>
-                <p>
-                    My academic excellence is reflected in my 4.0 GPA, Dean's Scholarship, and Dean's List 
-                    recognition. Beyond academics, I'm deeply involved in campus life as Treasurer of Babson 
-                    Club Tennis and a member of multiple professional organizations.
+                    Currently a senior at Babson College concentrating in Accounting. This summer, I will be
+                    interning in Audit at Deloitte in Tysons, VA. My time at Babson has fueled my passion for
+                    both accounting and entrepreneurship, and this semester, I am working as an Intermediate
+                    Accounting II Tutor, where I hope to help students build confidence and technical skills in
+                    accounting. Before my time at Babson, I took a gap year after high school to create and solely
+                    manage StarkSensei Trading LLC, which generated $70,000+ in revenue with 50% profit margins
+                    through the sale of collectible trading cards. I continued my entrepreneurial passion when I
+                    got to Babson by co-founding Swipe Athletics, an innovative athletic apparel startup providing
+                    high-quality tennis shorts with an integrated towel so players can easily dry their hands.
                 </p>
             </div>
             <div class="about-stats fade-in">
                 <div class="stat">
-                    <div class="stat-number">4.0</div>
+                    <div class="stat-number">3.95</div>
                     <div class="stat-label">GPA</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">$70K+</div>
-                    <div class="stat-label">Revenue Generated</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">50%</div>
-                    <div class="stat-label">Profit Margins</div>
+                    <div class="stat-number">Dean's Scholar</div>
+                    <div class="stat-label">Babson College</div>
                 </div>
                 <div class="stat">
                     <div class="stat-number">Deloitte</div>
@@ -815,14 +810,27 @@
         </div>
         <div class="experience-grid">
             <div class="experience-item fade-in">
-                <div class="experience-date">Incoming 2025</div>
+                <div class="experience-date">Incoming 2026</div>
                 <div class="experience-content">
                     <h3>Deloitte</h3>
                     <h4>Audit Intern — Washington, D.C.</h4>
                     <p>
-                        Joining Deloitte's audit practice in the Washington, D.C. area, 
-                        working with engagement teams to deliver high-quality audit services 
+                        Joining Deloitte's audit practice in the Washington, D.C. area,
+                        working with engagement teams to deliver high-quality audit services
                         and gain hands-on experience in public accounting.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-item fade-in">
+                <div class="experience-date">Current</div>
+                <div class="experience-content">
+                    <h3>Babson College</h3>
+                    <h4>Intermediate Accounting II Tutor & Teaching Assistant</h4>
+                    <p>
+                        Providing one-on-one and group tutoring sessions to help students master
+                        complex accounting concepts and principles. Collaborating with faculty to
+                        develop and write class assignments that reinforce key learning objectives
+                        and prepare students for professional accounting careers.
                     </p>
                 </div>
             </div>
@@ -832,20 +840,9 @@
                     <h3>StarkSensei Trading LLC</h3>
                     <h4>Founder & Sole Manager</h4>
                     <p>
-                        Founded and operated a trading business generating over $70,000 in revenue 
-                        with approximately 50% profit margins. Managed all aspects of operations, 
+                        Founded and operated a trading business generating over $70,000 in revenue
+                        with approximately 50% profit margins. Managed all aspects of operations,
                         financial planning, and strategic decision-making independently.
-                    </p>
-                </div>
-            </div>
-            <div class="experience-item fade-in">
-                <div class="experience-date">Current</div>
-                <div class="experience-content">
-                    <h3>Babson College</h3>
-                    <h4>Business Analytics Teaching Assistant</h4>
-                    <p>
-                        Supporting faculty in delivering business analytics curriculum, assisting 
-                        fellow students with complex analytical concepts and tools.
                     </p>
                 </div>
             </div>
@@ -855,9 +852,9 @@
                     <h3>Swipe Athletics</h3>
                     <h4>Co-Founder & Chief Financial Officer</h4>
                     <p>
-                        Co-founded and led financial strategy for an innovative athletic apparel 
-                        startup. Swipe Athletics produces high-quality tennis shorts with an integrated 
-                        towel feature, solving a real problem for athletes who need to keep their hands 
+                        Co-founded and led financial strategy for an innovative athletic apparel
+                        startup. Swipe Athletics produces high-quality tennis shorts with an integrated
+                        towel feature, solving a real problem for athletes who need to keep their hands
                         dry during competition.
                     </p>
                 </div>
@@ -876,7 +873,7 @@
                 <h3>Babson College</h3>
                 <h4>Accounting Concentration</h4>
                 <div class="education-details">
-                    <span class="education-tag">4.0 GPA</span>
+                    <span class="education-tag">3.95 GPA</span>
                     <span class="education-tag">Dean's Scholarship</span>
                     <span class="education-tag">Dean's List</span>
                 </div>
@@ -893,41 +890,41 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Interests Section -->
     <section class="skills" id="skills">
         <div class="section-header">
             <span class="section-number">04</span>
-            <h2 class="section-title">Expertise</h2>
+            <h2 class="section-title">Interests</h2>
         </div>
         <div class="skills-grid">
             <div class="skill-category fade-in">
-                <h4>Finance</h4>
+                <h4>Professional Aspirations</h4>
                 <ul class="skill-list">
-                    <li>Financial Accounting</li>
-                    <li>Financial Planning & Analysis</li>
-                    <li>P&L Management</li>
-                    <li>Business Valuation</li>
-                    <li>Trading & Investment</li>
+                    <li>Aspiring CPA</li>
+                    <li>Public Accounting Career</li>
+                    <li>Audit & Assurance Services</li>
+                    <li>Professional Development</li>
+                    <li>Accounting Standards & Regulations</li>
                 </ul>
             </div>
             <div class="skill-category fade-in">
-                <h4>Entrepreneurship</h4>
+                <h4>Business & Industry</h4>
                 <ul class="skill-list">
-                    <li>Business Development</li>
-                    <li>Startup Operations</li>
-                    <li>Strategic Planning</li>
-                    <li>Product Development</li>
-                    <li>Market Analysis</li>
+                    <li>Following Accounting News</li>
+                    <li>Business Current Events</li>
+                    <li>Financial Markets Analysis</li>
+                    <li>Corporate Governance</li>
+                    <li>Industry Trends & Innovation</li>
                 </ul>
             </div>
             <div class="skill-category fade-in">
-                <h4>Leadership</h4>
+                <h4>Personal Pursuits</h4>
                 <ul class="skill-list">
-                    <li>Team Management</li>
-                    <li>Cross-functional Collaboration</li>
-                    <li>Executive Communication</li>
-                    <li>Business Analytics</li>
-                    <li>Decision Making</li>
+                    <li>Competitive Tennis</li>
+                    <li>Entrepreneurship</li>
+                    <li>Student Leadership</li>
+                    <li>Networking & Mentorship</li>
+                    <li>Continuous Learning</li>
                 </ul>
             </div>
         </div>
