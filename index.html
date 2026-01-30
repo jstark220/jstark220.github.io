@@ -604,6 +604,26 @@
             font-size: 0.8rem;
         }
 
+        .skill-link-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: var(--color-accent);
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .skill-link-btn:hover {
+            background: var(--color-accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
         /* Contact Section */
         .contact {
             text-align: center;
@@ -705,10 +725,38 @@
 
             .hero {
                 padding: 6rem 2rem 4rem;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .hero-decoration {
-                display: none;
+                position: relative;
+                right: auto;
+                top: auto;
+                transform: none;
+                width: 250px;
+                height: 250px;
+                margin-top: 3rem;
+                animation: none;
+            }
+
+            .hero-eyebrow {
+                justify-content: center;
+            }
+
+            .hero-description {
+                text-align: center;
+            }
+
+            .hero-cta {
+                justify-content: center;
             }
 
             .about-content {
@@ -742,6 +790,21 @@
 
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .hero-decoration {
+                width: 200px;
+                height: 200px;
+                margin-top: 2rem;
+            }
+
+            .profile-contact-overlay h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+
+            .profile-contact-item {
+                font-size: 0.75rem;
             }
 
             .section-number {
@@ -787,7 +850,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Interests</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -798,8 +861,8 @@
             <div class="hero-eyebrow">Auditing</div>
             <h1>Jacob <span class="accent">Stark</span></h1>
             <p class="hero-description">
-                Accounting student at Babson College and incoming Audit Intern at Deloitte 
-                in Washington, D.C. Passionate about audit, accounting, and building a career 
+                Accounting student at Babson College and incoming Audit Intern at Deloitte
+                in Washington, D.C. Passionate about business, and excited to build a career
                 in public accounting.
             </p>
             <div class="hero-cta">
@@ -851,7 +914,7 @@
             <div class="about-text fade-in">
                 <p>
                     Currently a senior at Babson College concentrating in Accounting. This summer, I will be
-                    interning in Audit at Deloitte in Tysons, VA. My time at Babson has fueled my passion for
+                    interning in Audit at Deloitte in McLean, VA. My time at Babson has fueled my passion for
                     both accounting and entrepreneurship, and this semester, I am working as an Intermediate
                     Accounting II Tutor, where I hope to help students build confidence and technical skills in
                     accounting. Before my time at Babson, I took a gap year after high school to create and solely
@@ -958,8 +1021,8 @@
                 <h5>Campus Involvement</h5>
                 <ul>
                     <li>Treasurer, Babson Club Tennis</li>
+                    <li>Project Team Leader, Babson Undergraduate Consulting Program</li>
                     <li>Member, Babson Accounting Club</li>
-                    <li>Member, Babson Consulting Association</li>
                     <li>Member, Babson Sports Business Society</li>
                 </ul>
             </div>
@@ -998,9 +1061,13 @@
                 <ul class="skill-list">
                     <li>Competitive Tennis</li>
                     <li>Entrepreneurship</li>
-                    <li>Student Leadership</li>
-                    <li>Networking & Mentorship</li>
-                    <li>Continuous Learning</li>
+                    <li>
+                        <span style="display: block;">
+                            Owner of Accounting X Page<br>
+                            <a href="https://x.com/materialitychck" target="_blank" rel="noopener noreferrer" class="skill-link-btn">Materiality Check</a>
+                        </span>
+                    </li>
+                    <li>Fantasy Sports Analytics</li>
                 </ul>
             </div>
         </div>
